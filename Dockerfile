@@ -1,4 +1,4 @@
-FROM qnib/kafka
+FROM qnib/kafka:0.10.0.0
 
 ENV KAFKA_GRAPHITE_METRICS_ENABLED=true \
    KAFKA_GRAPHITE_METRICS_HOST=graphite.service.consul \
