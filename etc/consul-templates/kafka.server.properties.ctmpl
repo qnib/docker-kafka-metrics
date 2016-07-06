@@ -131,7 +131,7 @@ kafka.graphite.metrics.reporter.enabled={{ env "KAFKA_GRAPHITE_METRICS_ENABLED" 
 
 kafka.graphite.metrics.host={{ env "KAFKA_GRAPHITE_METRICS_HOST" }}
 kafka.graphite.metrics.port={{ env "KAFKA_GRAPHITE_METRICS_PORT" }}
-kafka.graphite.metrics.group=kafka.host.{{ env "KAFKA_GRAPHITE_METRICS_GROUP" }}
+kafka.graphite.metrics.group=kafka.group.{{ env "KAFKA_GRAPHITE_METRICS_GROUP" }}
 # This can be use to exclude some metrics from graphite
 # since kafka has quite a lot of metrics, it is useful
 # if you have many topics/partitions. For example :
