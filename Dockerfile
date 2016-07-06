@@ -9,3 +9,4 @@ ENV KAFKA_GRAPHITE_METRICS_ENABLED=true \
 ADD etc/consul-templates/kafka.server.properties.ctmpl /etc/consul-templates/
 RUN cd /opt/kafka/libs/ \
  && wget -q https://github.com/ChristianKniep/kafka-graphite/releases/download/${KAFKA_GRAPHITE_METRICS_VER}/kafka-graphite-${KAFKA_GRAPHITE_METRICS_VER}.jar
+ADD opt/qnib/kafka/bin/show_group.sh /opt/qnib/kafka/bin/
